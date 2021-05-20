@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>埋点版求成功</title>
     <link rel="stylesheet" href="style.css" />
-    <script charset="UTF-8" src="https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.16.15/sensorsdata.min.js"></script>
-<script charset="UTF-8">
-var sensors = window['sensorsDataAnalytic201505'];
-sensors.init({
-  server_url: 'https://sademo.datasink.sensorsdata.cn/sa?project=VideoWebcastDemo',
-  heatmap:{scroll_notice_map:'not_collect'},
-  is_track_single_page:true,
-  use_client_time:true,
-  send_type:'beacon'    
-});
-sensors.quick('autoTrack');
-</script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?6dcfa6245385a98afef361d5e6c4a76a";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
   </head>
   <body>
     <!--第一个大背景以及用来包括此背景中的各个元素-->
